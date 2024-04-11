@@ -20,7 +20,7 @@ from lib.visualization import draw_bbox2d_from_kitti, build_bbox3d_from_params, 
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--root_path', default='I:\Datasets\DENSE\SeeingThroughFog', help='Path to Dataset root directory')
+    parser.add_argument('--root_path', help='Path to Dataset root directory', required=True)
     parser.add_argument('--view_only', default=False, help='Prevent Label Changes')
     parser.add_argument('--path_timestamps', default='./timestamps.json', help='Prevent Label Changes')
     parser.add_argument('--username', default='admin', help='Enter your username to recover and save the current index.')
